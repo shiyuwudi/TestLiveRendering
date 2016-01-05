@@ -27,11 +27,36 @@
             </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="122" y="-228"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wgL-6f-A3d">
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wgL-6f-A3d" customClass="MyButton" customModule="TestLiveRendering" customModuleProvider="target">
             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <state key="normal" title="Button"/>
-            <point key="canvasLocation" x="137.5" y="418"/>
+            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+            <state key="normal" title="Titledf" image="chitoge"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="space">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="midXRatio">
+                    <real key="value" value="0.40000000000000002"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="midSpace">
+                    <real key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="imageW">
+                    <real key="value" value="100"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="imageH">
+                    <real key="value" value="90"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                    <real key="value" value="39"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="heightClass=regular-widthClass=compact"/>
+            <point key="canvasLocation" x="133" y="261.5"/>
         </button>
     </objects>
+    <resources>
+        <image name="chitoge" width="224" height="224"/>
+    </resources>
 </document>

@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var myButton: MyButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        myButton.frame = CGRect.init(x: 100, y: 100, width: 100, height: 100)
+        myButton.backgroundColor = UIColor.yellowColor()
+        view .addSubview(myButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,16 +94,63 @@ class MyView:UIView {
 @IBDesignable
 class MyButton: UIButton {
     
+    @IBInspectable var midSpace:CGFloat
+    @IBInspectable var midXRatio:CGFloat
+    @IBInspectable var imageW:CGFloat
+    @IBInspectable var imageH:CGFloat
+    
+    @IBInspectable var fontSize:CGFloat
+    
+    override func titleRectForContentRect(contentRect: CGRect) -> CGRect {
+        let w = contentRect.width
+        let h = contentRect.height
+        let w1 = midXRatio * w - midSpace
+        let h1 = h
+        let x1 = midXRatio * w + midSpace
+        let y1 = 0 as CGFloat
+        let frame = CGRect.init(x: x1, y: y1, width: w1, height: h1)
+        return frame
+    }
+    
+    override func imageRectForContentRect(contentRect: CGRect) -> CGRect {
+        let w = contentRect.width
+        let h = contentRect.height
+        let w1 = imageW
+        let h1 = imageH
+        let x1 = midXRatio * w - midSpace - w1
+        let y1 = 0.5 * (h - h1)
+        let frame = CGRect.init(x: x1, y: y1, width: w1, height: h1)
+        return frame
+    }
+    
     override init(frame: CGRect) {
+        
+        //初始化
+        midSpace = 5
+        midXRatio = 0.5
+        imageW = 44
+        imageH = 44
+        fontSize = 18
         super.init(frame: frame)
+        
     }
 
     required init?(coder aDecoder: NSCoder) {
+        
+        //初始化
+        midSpace = 5
+        midXRatio = 0.5
+        imageW = 44
+        imageH = 44
+        fontSize = 18
         super.init(coder: aDecoder)
+        
     }
     
     override func layoutSubviews() {
-        
+        super.layoutSubviews()
+        setTitleColor(UIColor.blackColor(), forState: .Normal)
+        titleLabel?.font = UIFont.systemFontOfSize(fontSize)
     }
 }
 
