@@ -152,5 +152,6 @@ class MyButton: UIButton {
         setTitleColor(UIColor.blackColor(), forState: .Normal)
         titleLabel?.font = UIFont.systemFontOfSize(fontSize)
     }
+    
 }
 
