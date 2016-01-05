@@ -12,6 +12,7 @@
 		29295E311C3BF7A900A45B3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29295E2F1C3BF7A900A45B3C /* Main.storyboard */; };
 		29295E331C3BF7A900A45B3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29295E321C3BF7A900A45B3C /* Assets.xcassets */; };
 		29295E361C3BF7A900A45B3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29295E341C3BF7A900A45B3C /* LaunchScreen.storyboard */; };
+		29295E421C3BFAAA00A45B3C /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29295E411C3BFAAA00A45B3C /* MyView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		29295E321C3BF7A900A45B3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29295E351C3BF7A900A45B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29295E371C3BF7A900A45B3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29295E411C3BFAAA00A45B3C /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				29295E321C3BF7A900A45B3C /* Assets.xcassets */,
 				29295E341C3BF7A900A45B3C /* LaunchScreen.storyboard */,
 				29295E371C3BF7A900A45B3C /* Info.plist */,
+				29295E411C3BFAAA00A45B3C /* MyView.xib */,
 			);
 			path = TestLiveRendering;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29295E421C3BFAAA00A45B3C /* MyView.xib in Resources */,
 				29295E361C3BF7A900A45B3C /* LaunchScreen.storyboard in Resources */,
 				29295E331C3BF7A900A45B3C /* Assets.xcassets in Resources */,
 				29295E311C3BF7A900A45B3C /* Main.storyboard in Resources */,
@@ -284,6 +288,7 @@
 				29295E3C1C3BF7A900A45B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
